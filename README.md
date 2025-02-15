@@ -4,9 +4,9 @@ Enlaces youtube videos tutoriales Juego Pygame
 
 
 https://www.youtube.com/watch?v=mgeEQoeH8yE <p>
-https://www.youtube.com/watch?v=dmVTcnITLvw
-https://www.youtube.com/watch?v=KcLtYCftgcM
-https://www.youtube.com/watch?v=sTomADA9nus
-https://www.youtube.com/watch?v=IvzCpytRucg
-https://www.youtube.com/watch?v=k07FlyqFWHo
-https://www.youtube.com/watch?v=_6n3wwqJ-6o
+https://www.youtube.com/watch?v=dmVTcnITLvw <p>
+https://www.youtube.com/watch?v=KcLtYCftgcM <p>
+https://www.youtube.com/watch?v=sTomADA9nus <p>
+https://www.youtube.com/watch?v=IvzCpytRucg <p>
+https://www.youtube.com/watch?v=k07FlyqFWHo <p>
+https://www.youtube.com/watch?v=_6n3wwqJ-6o<p>
