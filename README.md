@@ -3,7 +3,7 @@ Enlaces youtube videos tutoriales Juego Pygame
 
 
 
-https://www.youtube.com/watch?v=mgeEQoeH8yE 
+https://www.youtube.com/watch?v=mgeEQoeH8yE <p>
 https://www.youtube.com/watch?v=dmVTcnITLvw
 https://www.youtube.com/watch?v=KcLtYCftgcM
 https://www.youtube.com/watch?v=sTomADA9nus
