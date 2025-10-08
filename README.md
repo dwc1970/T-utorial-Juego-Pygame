@@ -9,11 +9,9 @@ El contenido se enfoca en la **implementación práctica** de conceptos clave, i
 Es una base sólida y detallada para iniciar en el **desarrollo de videojuegos** desde una perspectiva técnica y funcional.
 
 
-=========================================== 
+
 video 1
 https://www.youtube.com/watch?v=mgxwzaFGKaM
-===========================================
-<img width="960" height="467" alt="Star" src="https://github.com/user-attachments/assets/10b0caae-09b5-4e9a-9a61-b4293ab7010c" />
 =========================================== 
 video 2
 https://www.youtube.com/watch?v=UCig1Imnpig
