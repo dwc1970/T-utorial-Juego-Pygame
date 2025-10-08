@@ -14,7 +14,7 @@ Es una base sólida y detallada para iniciar en el **desarrollo de videojuegos**
 
 ---
 
-## Enlaces del Tutorial (13 Videos)
+## Enlaces del tutorial 
 
 1. **Video 1:** [https://www.youtube.com/watch?v=mgxwzaFGKaM](https://www.youtube.com/watch?v=mgxwzaFGKaM)
 2. **Video 2:** [https://www.youtube.com/watch?v=UCig1Imnpig](https://www.youtube.com/watch?v=UCig1Imnpig)
