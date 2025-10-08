@@ -10,7 +10,7 @@ Es una base sólida y detallada para iniciar en el **desarrollo de videojuegos**
 
 
 
-video 1
+<p>video 1 </p>
 https://www.youtube.com/watch?v=mgxwzaFGKaM
 =========================================== 
 video 2
