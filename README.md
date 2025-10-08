@@ -11,7 +11,8 @@ Es una base sólida y detallada para iniciar en el **desarrollo de videojuegos**
 =========================================== 
 ## Video de Presentación (Video 1)
 
-[![Miniatura del tutorial de Pygame](https://img.youtube.com/vi/mgxwzaFGKaM/maxresdefault.jpg)](https://www.youtube.com/watch?v=mgxwzaFGKaM)
+[<img width="960" height="467" alt="Star" src="https://github.com/user-attachments/assets/896bf51d-306c-4869-8157-803735d53345" />
+](https://img.youtube.com/vi/mgxwzaFGKaM/maxresdefault.jpg)](https://www.youtube.com/watch?v=mgxwzaFGKaM)
 
 =======================================
 ===========================================
