@@ -11,11 +11,11 @@ Es una base sólida y detallada para iniciar en el **desarrollo de videojuegos**
 ## Galería de Elementos del Juego
 
 <div align="center">
-   <img src="Star.jpg" width="220" height="130" alt="Imagen 1">
-  <img src="Estrella.png" width="220" height="130" alt="Imagen 2">
-  <img src="enemigo1.png" width="220" height="130" alt="Imagen 3">
-  <img src="Speeder.png" width="220" height="130" alt="Imagen 4">
-  <img src="vader.jpg" width="220" height="130" alt="Imagen 5">
+   <img src="Star.jpg" width="220" height="130" alt="Estrella">
+  <img src="Estrella.png" width="220" height="130" alt="Estrella">
+  <img src="enemigo1.png" width="220" height="130" alt="Enemigo 1">
+  <img src="Speeder.png" width="220" height="130" alt="Speeder">
+  <img src="vader.jpg" width="220" height="130" alt="Vader">
 
 </div>
 
