@@ -1,0 +1,127 @@
+¡Absolutamente\! Aquí tienes el código **Python** con **Pygame** que incluye los ejemplos de los eventos más comunes, y justo debajo de cada sección relevante, una explicación simple en un comentario.
+
+Recuerda instalar Pygame primero: `pip install pygame`.
+
+-----
+
+## Código Python con Eventos y Explicaciones 🐍
+
+```python
+import pygame
+
+# --- Configuración Inicial ---
+pygame.init()
+
+ANCHO_PANTALLA = 800
+ALTO_PANTALLA = 600
+PANTALLA = pygame.display.set_mode((ANCHO_PANTALLA, ALTO_PANTALLA))
+pygame.display.set_caption("Eventos con Explicación Sencilla")
+
+# --- Colores y Fuente ---
+BLANCO = (255, 255, 255)
+NEGRO = (0, 0, 0)
+ROJO = (255, 0, 0)
+
+try:
+    FUENTE = pygame.font.Font(None, 30)
+except:
+    FUENTE = pygame.font.SysFont("arial", 30) 
+
+# Variables para seguimiento de estado
+ultima_accion = "Esperando interacciones..."
+posicion_mouse = (0, 0)
+
+def mostrar_texto(superficie, texto, color, x, y):
+    """Renderiza y dibuja un texto en la pantalla."""
+    texto_superficie = FUENTE.render(texto, True, color)
+    superficie.blit(texto_superficie, (x, y))
+
+# --- Bucle Principal del Juego ---
+corriendo = True
+while corriendo:
+    
+    # 1. Bucle de Eventos: Revisamos qué ha pasado
+    for evento in pygame.event.get():
+        
+        # ---------------------------------------------------------------------
+        # Ejemplo: QUIT
+        # Se genera cuando el usuario hace clic en el botón de cerrar (la 'X').
+        # Es la forma correcta de terminar el programa.
+        # ---------------------------------------------------------------------
+        if evento.type == pygame.QUIT:
+            ultima_accion = "EVENTO: QUIT (Cierre de ventana)"
+            corriendo = False 
+        
+        # ---------------------------------------------------------------------
+        # Ejemplo: KEYDOWN
+        # Se genera cuando se PULSA una tecla. Usamos 'evento.key' para saber cuál.
+        # Es ideal para acciones instantáneas o para iniciar un movimiento continuo.
+        # ---------------------------------------------------------------------
+        elif evento.type == pygame.KEYDOWN:
+            tecla_nombre = pygame.key.name(evento.key)
+            ultima_accion = f"EVENTO: KEYDOWN - Tecla pulsada: {tecla_nombre.upper()}"
+        
+        # ---------------------------------------------------------------------
+        # Ejemplo: KEYUP
+        # Se genera cuando se SUELTA una tecla.
+        # Es ideal para detener un movimiento o una acción que estaba activa.
+        # ---------------------------------------------------------------------
+        elif evento.type == pygame.KEYUP:
+            tecla_nombre = pygame.key.name(evento.key)
+            ultima_accion = f"EVENTO: KEYUP - Tecla liberada: {tecla_nombre.upper()}"
+            
+        # ---------------------------------------------------------------------
+        # Ejemplo: MOUSEBUTTONDOWN
+        # Se genera cuando se hace clic (se PULSA) con un botón del ratón.
+        # 'evento.pos' es la posición (x, y) del clic, y 'evento.button' indica el botón.
+        # ---------------------------------------------------------------------
+        elif evento.type == pygame.MOUSEBUTTONDOWN:
+            pos_x, pos_y = evento.pos
+            boton = "IZQ" if evento.button == 1 else "DER" if evento.button == 3 else f"Otro ({evento.button})"
+            ultima_accion = f"EVENTO: MOUSEBUTTONDOWN - Botón {boton} en ({pos_x}, {pos_y})"
+
+        # ---------------------------------------------------------------------
+        # Ejemplo: MOUSEMOTION
+        # Se genera CONSTANTEMENTE mientras el ratón se mueve.
+        # 'evento.pos' es la posición actual (x, y).
+        # Es útil para dibujar un cursor personalizado o seguir el ratón.
+        # ---------------------------------------------------------------------
+        elif evento.type == pygame.MOUSEMOTION:
+            posicion_mouse = evento.pos
+            # (No actualizamos 'ultima_accion' aquí para evitar que se llene)
+            
+        # ---------------------------------------------------------------------
+        # Ejemplo: VIDEORESIZE
+        # Se genera si la ventana cambia de tamaño (si el juego lo permite).
+        # 'evento.size' tiene el nuevo (ancho, alto). Útil para ajustar el contenido.
+        # ---------------------------------------------------------------------
+        elif evento.type == pygame.VIDEORESIZE:
+            ultima_accion = f"EVENTO: VIDEORESIZE - Nuevo tamaño: {evento.size}"
+        
+        # ---------------------------------------------------------------------
+        # Ejemplo: USEREVENT
+        # Es un evento PERSONALIZADO que lanzamos nosotros (ej: para un temporizador).
+        # Requiere que definamos USEREVENT + NÚMERO al inicio del código.
+        # ---------------------------------------------------------------------
+        # El ejemplo de uso sería:
+        # elif evento.type == USEREVENT_CUSTOM_TIMER:
+        #     ultima_accion = "EVENTO: USEREVENT (Timer personalizado disparado)"
+        # ---------------------------------------------------------------------
+
+    # 2. Dibujo en Pantalla
+    PANTALLA.fill(BLANCO)
+    
+    # Muestra el estado actual del mouse y el último evento
+    mostrar_texto(PANTALLA, "ÚLTIMO EVENTO:", NEGRO, 50, 50)
+    mostrar_texto(PANTALLA, ultima_accion, ROJO, 50, 100)
+    mostrar_texto(PANTALLA, f"Mouse en: {posicion_mouse}", NEGRO, 50, 150)
+    
+    # Dibuja un círculo siguiendo al mouse (gracias a MOUSEMOTION)
+    pygame.draw.circle(PANTALLA, NEGRO, posicion_mouse, 5)
+
+    # 3. Actualizar la Pantalla
+    pygame.display.flip()
+
+# --- Salir del Juego ---
+pygame.quit()
+```
