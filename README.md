@@ -11,11 +11,8 @@ Es una base sólida y detallada para iniciar en el **desarrollo de videojuegos**
 ## Galería de Elementos del Juego
 
 <div align="center">
-  <img src="assets/Star.jpg" width="220" height="130" alt="Imagen 1">
-  <img src="assets/Estrella.png" width="220" height="130" alt="Imagen 2">
-  <img src="assets/enemigo1.png" width="220" height="130" alt="Imagen 3">
-  <img src="assets/Speeder.png" width="220" height="130" alt="Imagen 4">
-  <img src="assets/vader.jpg" width="220" height="130" alt="Imagen 5">
+  ![vader](https://github.com/user-attachments/assets/12f675a9-17a9-42d8-a4c9-f3c334560058)
+
 </div>
 
 ---
