@@ -8,11 +8,9 @@ Es una base sólida y detallada para iniciar en el **desarrollo de videojuegos**
 
 ---
 
-## Galería de Elementos del Juego
+## 
 
-
-   ![vader](https://github.com/user-attachments/assets/766a9a53-2cd9-4838-a043-8daade16bf4f) <img width="447" height="493" alt="Speeder" src="https://github.com/user-attachments/assets/e560c7fd-8c23-404c-abcc-13834ffa4639" />
-
+![vader](https://github.com/user-attachments/assets/43a91cee-dd21-409c-a0b6-7acc67949d16)
 
 ---
 
