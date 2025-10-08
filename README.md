@@ -10,11 +10,10 @@ Es una base sólida y detallada para iniciar en el **desarrollo de videojuegos**
 
 =========================================== 
 ## Video de Presentación (Video 1)
+<img width="960" height="467" alt="Star" src="https://github.com/user-attachments/assets/28e525a2-a611-4711-9449-98b2c754cb5a" />
 
-[<img width="960" height="467" alt="Star" src="https://github.com/user-attachments/assets/896bf51d-306c-4869-8157-803735d53345" />
-](https://img.youtube.com/vi/mgxwzaFGKaM/maxresdefault.jpg)](https://www.youtube.com/watch?v=mgxwzaFGKaM)
+https://www.youtube.com/watch?v=mgxwzaFGKaM
 
-=======================================
 ===========================================
 video 2
 https://www.youtube.com/watch?v=UCig1Imnpig
