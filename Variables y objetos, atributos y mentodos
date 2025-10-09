@@ -1,0 +1,120 @@
+Objetos y atributos y metodos del juego "Amenaza Fantasma"
+
+juego_completo = {
+
+    # Pantalla y entorno
+    "pantalla": {
+        "screen": {
+            "tipo": "pygame.Surface",
+            "atributos": ["ancho", "alto", "buffer de dibujo"],
+            "proposito": "Superficie principal donde se dibuja todo"
+        },
+        "SCREEN_WIDTH": {"tipo": "int", "proposito": "Ancho de la ventana"},
+        "SCREEN_HEIGHT": {"tipo": "int", "proposito": "Alto de la ventana"},
+        "icon": {"tipo": "pygame.Surface", "proposito": "Ícono de la ventana"},
+        "fondos": {
+            "fondo2": {"tipo": "pygame.Surface", "proposito": "Fondo 1 del juego"},
+            "fondo3": {"tipo": "pygame.Surface", "proposito": "Fondo 2 del juego"},
+            "fondo_actual": {
+                "tipo": "pygame.Surface",
+                "proposito": "Fondo actualmente mostrado",
+                "relacion": "Alterna entre fondo2 y fondo3 según puntos"
+            }
+        }
+    },
+
+    # Sonidos
+    "sonidos": {
+        "sonido_laser": {
+            "tipo": "pygame.mixer.Sound",
+            "proposito": "Sonido al disparar",
+            "usado_por": "personaje.lanzar_laser()"
+        },
+        "sonido_explosion": {
+            "tipo": "pygame.mixer.Sound",
+            "proposito": "Sonido al destruir enemigos",
+            "usado_por": "enemigo colisionado con láser"
+        }
+    },
+
+    # Jugador
+    "personaje": {
+        "tipo": "Personaje",
+        "atributos": ["x", "y", "rect/shape", "lasers", "energia"],
+        "metodos": ["mover(dx, dy)", "lanzar_laser()", "dibujar(screen)", "recibir_dano()"],
+        "relaciones": {
+            "disparos": "lista de láseres creados",
+            "enemigos": "colisiona con objetos Enemigo",
+            "explosiones": "genera Explosion al destruir enemigo"
+        }
+    },
+
+    # Láseres del jugador (contenidos dentro de personaje.lasers)
+    "lasers": {
+        "tipo": "list[Láser]",
+        "atributos": ["x", "y", "rect", "velocidad"],
+        "relaciones": {
+            "enemigos": "colisiona y destruye Enemigo",
+            "explosiones": "genera Explosion al impactar"
+        }
+    },
+
+    # Enemigos
+    "enemigos": {
+        "tipo": "list[Enemigo]",
+        "atributos": ["rect", "imagen", "velocidad"],
+        "metodos": ["mover()", "dibujar(screen)"],
+        "relaciones": {
+            "personaje": "puede colisionar y hacer daño",
+            "lasers": "puede ser destruido por láseres",
+            "explosiones": "genera Explosion al morir"
+        }
+    },
+
+    # Explosiones
+    "explosiones": {
+        "tipo": "list[Explosion]",
+        "atributos": ["x", "y", "frames/imagenes", "frame_index"],
+        "metodos": ["actualizar()", "dibujar(screen)"],
+        "relaciones": {
+            "enemigos": "ocurre al destruir enemigo",
+            "lasers": "ocurre al impacto"
+        }
+    },
+
+    # Puntuación y niveles
+    "marcador": {
+        "puntos": {"tipo": "int", "proposito": "puntaje del jugador"},
+        "nivel": {
+            "tipo": "int",
+            "proposito": "nivel actual",
+            "relacion": "aumenta cada 250 puntos, cambia fondo"
+        }
+    },
+
+    # Control de juego
+    "control": {
+        "dx": {"tipo": "int", "proposito": "movimiento horizontal"},
+        "dy": {"tipo": "int", "proposito": "movimiento vertical"},
+        "keys": {"tipo": "estado del teclado", "proposito": "detectar flechas presionadas"},
+        "running": {"tipo": "bool", "proposito": "controla bucle principal"},
+        "reiniciar": {"tipo": "bool", "proposito": "controla bucle de reinicio"}
+    },
+
+    # Textos y botones
+    "interfaz": {
+        "texto_game_over": {"tipo": "pygame.Surface", "proposito": "mensaje GAME OVER"},
+        "texto_mensaje": {"tipo": "pygame.Surface", "proposito": "mensaje debajo de GAME OVER"},
+        "texto_reinicio": {"tipo": "pygame.Surface", "proposito": "texto del botón reiniciar"},
+        "boton_rect": {"tipo": "pygame.Rect", "proposito": "área clicable del botón reiniciar"}
+    },
+
+    # Funciones auxiliares
+    "funciones": {
+        "mostrar_imagen_inicial()": {
+            "proposito": "Muestra imagen con efecto fade-out al inicio",
+            "parametros": ["screen", "imagen_path", "duracion"]
+        }
+    }
+
+}
